@@ -133,7 +133,10 @@ header .navbar {
     background-color: var(--secandary-color);
     color: var(--primary-color);
 }
-
+.navbar .nav-item a.active {
+    background-color: var(--secandary-color);
+    color: var(--primary-color);
+}
 /* ---------------------------------------------------------------------hero-section------------------------------------------- */
 
 
@@ -660,12 +663,13 @@ header .navbar {
 #btn {
     position: fixed;
     bottom: 90px;
-    right: 50%;
+    right: 8%;
     display: none;
     border-radius: 50%;
     padding: 10px 14px;
     z-index: 999;
-    background-color: var(--secandary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--light-pink-color);
     cursor: pointer;
+
 }
