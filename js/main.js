@@ -1,4 +1,11 @@
+const navLinks = document.querySelectorAll(".nav-item a");
 
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.forEach(item => item.classList.remove("active"));
+        link.classList.add("active");
+    });
+});
 
 
 let menuOpen = document.getElementById("menu-open");
@@ -56,4 +63,5 @@ btn.addEventListener("click", () => {
         top: 0,
         behavior: "smooth",
     })
+
 })
